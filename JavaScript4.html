@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD 
+HTML4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+    <head>
+        <script type="text/javascript">
+
+        </script>
+    </head>
+    <body>
+            <form name = "jamesform">
+                Username: <input type="text" name="usersname"/>
+                Password: <input type="password" name="password"/>
+                <input type="submit" value="Submit!" />
+            </form>
+
+            <form name = "buckysform">
+                <input type="checkbox" name="thebox"/>
+                <input type="button" value="press me!" onclick="validator()"/>
+                <input type="submit" value="Submit!" />
+            </form>
+
+        <script type="text/javascript">
+
+            var dudes = new Array("Lisa", "James", "Hannah");
+            var people = new Array("Bucky", "Tommy", "Sarah");
+            document.write(people.length + "</br>");
+
+            var person = dudes.concat(people);
+            document.write(person[5] + "</br>");
+
+            var movies = new Array ("Avatar", "Good Will Hunting", "Vanilla Sky", "Fight Club");
+            var string1 = movies.join(" - ");
+            document.write(string1 + "</br>");
+            movies.pop(); //pop
+            string1 = movies.join(" - ");
+            document.write(string1 + "</br>");
+
+            movies.reverse(); //reverse
+            string1 = movies.join(" - ");
+            document.write(string1 + "</br>");
+
+            movies.push("ID4", "The game of thrones"); //push
+            string1 = movies.join(" - ");
+            document.write(string1 + "</br>");
+
+            movies.sort(); //sort
+            string1 = movies.join(" - ");
+            document.write(string1 + "</br>");
+
+
+
+            // var pie = prompt("Enter your names: ","");
+            // document.write("Hello, " + pie+ "</br>");
+
+
+            // var crap = new Array(3);
+
+            // for (i=0 ; i<3 ; i++){
+            //     crap[i] = prompt("Add something to the array:", "");
+            // }
+
+            // document.write(crap[0] + crap[1] + crap[2]+ "</br>");
+
+
+            var stuff = new Array("apples", "pears", "bacon", "tuna", "ham");
+            stuff.sort();
+            for(i=0;i<stuff.length;i++){
+                document.write(stuff[i] + "</br>");
+            }
+
+            var bucky = new Array();
+            bucky["color"] = "blue";
+            bucky["food"] = "hot pockets";
+            document.write("buckys favotire food is " + bucky["food"] + "</br>");
+
+
+            document.write("The math symble of PI means" + Math.PI+ "</br>");
+            document.write("The math symble of E means" + Math.E+ "</br>");
+            
+            // var n = prompt("Enter a number", "");
+            // var answer = Math.sqrt(n);
+            // alert("The sqare root is " + answer);
+            // document.write( "</br>");
+
+
+            // function doSomething(){
+            //     document.write("Tunga ");
+            // }
+
+            // setInterval(doSomething,"1")
+
+             function printTime(){
+                 var now = new Date();
+                 var hours = now.getHours();
+                 var mins = now.getMinutes();
+                 var seconds = now.getSeconds();
+                 document.write(hours + ":" + mins + ":" + seconds +"</br>");
+            }
+
+            setInterval(printTime(),1000)
+            
+            var x = document.jamesform.usersname.name;
+            document.write(x);
+
+             function validator(){
+                 if(document.buckysform.thebox.checked)
+                    alert("Yes, It's checked")
+                 else
+                    alert("No, It's not checked")
+             }
+
+        </script>
+    </body>
+</html>

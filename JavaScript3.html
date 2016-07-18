@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD 
+HTML4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+    <head>
+        <script type="text/javascript">
+            function person(name, age){
+                this.name = name;
+                this.age = age;
+                this.yearsUnitlRetire = yearsLeft;
+            }
+
+            function yearsLeft(){
+                var numYears = 65 - this.age;
+                return numYears;
+            }
+            var james = new person("James",25);
+            var taylor = new person("Taylor", 22);
+
+            bucky = {name:"Bucky Roberts", age:24};
+            jane = {name:"Jane Chen", age:24};
+
+
+        </script>
+    </head>
+    <body>
+        <script type="text/javascript">
+            document.write(james.name+"</br>");
+            document.write(bucky.name + " loves " + jane.name + " because she is " + jane.age+"</br>");
+            document.write(james.yearsUnitlRetire());
+        </script>
+    </body>
+</html>

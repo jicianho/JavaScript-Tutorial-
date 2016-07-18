@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD 
+HTML4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+
+<html>
+    <head>
+        <style type="text/css">
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript">
+            //comment goes here
+            var tuna = "24.46464 text,\"hey gogo \" "+"<br/>";
+            document.write("hey now brown cow"+"<br/>");
+            document.write(tuna);
+
+            var name = "James";
+            var age = 25;
+
+            document.write(name + " is my name, and my age is "+age+"<br/>");
+
+            meatball("bacon");
+
+            apples("monkey", "ape");
+
+            function funky(){
+                alert("Ouch!!!");
+            }
+
+            function meatball(x){
+                alert("i love " + x);
+            }
+
+            function apples(one, two){
+                document.write(one +" is better than " + two+"<br/>");
+            }
+            
+            function tooeasy(){
+                return "gametime";
+            }
+
+            function addNumbers(a, b){
+                var c = a+b;
+                return c;
+            }
+
+            
+            document.write(tooeasy());
+            document.write(addNumbers(2,5));
+
+
+        </script>
+        <form>
+            <input type="button" value="touch me" onclick="funky()"/>
+        </form>
+    </body>
+</html>
